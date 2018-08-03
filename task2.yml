@@ -5,6 +5,7 @@ image_resource: { type: docker-image, source: {repository: pivotalgreenhouse/ci 
 
 inputs:
 - name: output
+- name: concourse-hello
 run:
   path: bash
   args:
