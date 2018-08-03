@@ -12,5 +12,4 @@ run:
   args:
   - "-c"
   - 'echo "hi" > output/cool.txt'
-  - "-c"
   - 'cat concourse-hello/text.txt'
