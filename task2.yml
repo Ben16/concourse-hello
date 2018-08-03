@@ -3,8 +3,11 @@ platform: linux
 
 image_resource: { type: docker-image, source: {repository: pivotalgreenhouse/ci } }
 
+inputs:
+- name: output
 run:
   path: bash
   args:
   - "-c"
   - 'echo "hello from task 2"'
+  - 'cat output/cool.txt'

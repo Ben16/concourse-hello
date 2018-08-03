@@ -5,9 +5,11 @@ image_resource: { type: docker-image, source: {repository: pivotalgreenhouse/ci 
 
 inputs:
 - name: concourse-hello
-
+outputs:
+- name: output
 run:
   path: bash
   args:
   - "-c"
+  - 'echo "hi" > output/cool.txt'
   - 'cat concourse-hello/text.txt'
