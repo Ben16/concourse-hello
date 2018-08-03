@@ -1,0 +1,10 @@
+---
+platform: linux
+
+image_resource: { type: docker-image, source: {repository: pivotalgreenhouse/ci } }
+
+run:
+  path: bash
+  args:
+  - "-c"
+  - 'echo "hello from task 2"'
