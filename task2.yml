@@ -11,4 +11,5 @@ run:
   args:
   - "-c"
   - 'echo "hello from task 2"'
+  - "-c"
   - 'cat output/cool.txt'
